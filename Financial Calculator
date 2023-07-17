@@ -26,9 +26,9 @@ def bond_repayment_calculator():
     print(f"Monthly bond repayment: {repayment:.2f}")
 
 def main():
-    print("---------------------------------------")
-    print("Welcome to In IT to win IT Calculator!")
-    print("---------------------------------------")
+     print("****************************************************")
+     print("----------Welcome to In IT to Win IT----------------")
+     print("****************************************************")
     while True:
         print("\nPlease choose an option:")
         print("1. Investment Calculator")
