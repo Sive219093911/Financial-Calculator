@@ -25,11 +25,11 @@ def bond_repayment_calculator():
 
     print(f"Monthly bond repayment: {repayment:.2f}")
 
-def main():
-     print("****************************************************")
-     print("----------Welcome to In IT to Win IT----------------")
-     print("****************************************************")
-    while True:
+
+while True:
+        print("---------------------------------------")
+        print("Welcome to In IT to win IT Calculator!")
+        print("---------------------------------------")
         print("\nPlease choose an option:")
         print("1. Investment Calculator")
         print("2. Bond Repayment Calculator")
@@ -49,5 +49,12 @@ def main():
         else:
             print("Invalid choice. Please enter a valid option (1, 2, or 0).")
 
+
+def main():
+    pass
+
+
 if __name__ == "__main__":
     main()
+else:
+    pass
