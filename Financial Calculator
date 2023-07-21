@@ -1,6 +1,9 @@
 import math
 
 def investment_calculator():
+    print("====================================================")
+    print("---------In IT Investment Calculator----------------")
+    print("====================================================")
     amount = float(input("Enter the amount of money you are depositing: "))
     interest_rate = float(input("Enter the interest rate (as a percentage): ")) / 100
     years = int(input("Enter the number of years you plan on investing for: "))
@@ -12,39 +15,43 @@ def investment_calculator():
         total_amount = amount * math.pow((1 + interest_rate), years)
     else:
         print("Invalid interest type. Please enter 'simple' or 'compound'.")
-
-    print(f"Total amount after {years} years: {total_amount:.2f}")
+    print("------------------------------------------------------")
+    print(f"Total amount after {years} years: R{total_amount:.2f}")
 
 def bond_repayment_calculator():
+    print("====================================================")
+    print("---------Win IT Bond Repayment Calculator-----------")
+    print("====================================================")
     present_value = float(input("Enter the present value of the house: "))
     interest_rate = float(input("Enter the interest rate: ")) / 100
     months = int(input("Enter the number of months to repay the bond: "))
 
     monthly_interest_rate = interest_rate / 12
     repayment = (monthly_interest_rate * present_value) / (1 - math.pow(1 + monthly_interest_rate, -months))
-
-    print(f"Monthly bond repayment: {repayment:.2f}")
+    print("------------------------------------------------------")
+    print(f"Monthly bond repayment: R{repayment:.2f}")
 
 
 while True:
-        print("---------------------------------------")
-        print("Welcome to In IT to win IT Calculator!")
-        print("---------------------------------------")
+        print("******************************************************")
+        print("=======Welcome to In IT to win IT Calculator!=========")
+        print("******************************************************")
         print("\nPlease choose an option:")
         print("1. Investment Calculator")
         print("2. Bond Repayment Calculator")
         print("0. Exit")
 
         choice = input("Enter the number of your choice: ")
-        print("---------------------------------------")
+
+
         if choice == '1':
             investment_calculator()
         elif choice == '2':
             bond_repayment_calculator()
         elif choice == '0':
-            print("******************************************")
-            print("Exiting the Financial Calculator. Goodbye!")
-            print("******************************************")
+            print("------------------------------------------------------")
+            print(">>>>>>>>Exiting the Financial Calculator.<<<<<<<<<<<<<")
+            print("------------------------------------------------------")
             break
         else:
             print("Invalid choice. Please enter a valid option (1, 2, or 0).")
